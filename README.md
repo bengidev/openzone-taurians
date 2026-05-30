@@ -16,6 +16,7 @@ OpenZone Taurians integrates AI models with your desktop environment, letting yo
 
 - **[Tauri 2](https://tauri.app/)** — desktop shell (Rust)
 - **TypeScript + Vite** — frontend
+- **[Tailwind CSS v4](https://tailwindcss.com/)** — styling (via `@tailwindcss/vite`)
 - **Rust** — native backend / system integration
 
 ## 📦 Prerequisites
@@ -41,11 +42,22 @@ bun run tauri build
 
 ```
 openzone-taurians/
-├── src/            # Frontend (TypeScript)
-├── src-tauri/      # Rust backend & Tauri config
-├── index.html      # App entry
+├── src/                    # Frontend
+│   ├── assets/             # Static assets (svg, images)
+│   └── core/               # App core (entry + logic + styles)
+│       ├── index.html      # App entry (Vite root is src/)
+│       ├── main.ts         # TypeScript entry
+│       └── styles.css      # Tailwind CSS entry
+├── src-tauri/              # Rust backend & Tauri config
+│   └── src/core/           # Rust core (lib.rs + main.rs)
+├── vite.config.ts          # Vite config (root=src, dev/build path plugins)
 └── package.json
 ```
+
+> The frontend is grouped under `src/core/` and the Rust backend under
+> `src-tauri/src/core/`. Vite uses `src/` as its root; small plugins in
+> `vite.config.ts` serve `src/core/index.html` at `/` in dev and flatten
+> it to `dist/index.html` on build so Tauri's `frontendDist` resolves it.
 
 ## 🗺️ Roadmap
 
