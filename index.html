@@ -8,34 +8,62 @@
     <script type="module" src="/src/core/main.ts" defer></script>
   </head>
 
-  <body>
-    <main class="container">
-      <h1>Welcome to Tauri</h1>
+  <body
+    class="min-h-screen bg-[#f6f6f6] text-[#0f0f0f] antialiased dark:bg-[#2f2f2f] dark:text-[#f6f6f6]"
+    style="font-family: Inter, Avenir, Helvetica, Arial, sans-serif"
+  >
+    <main class="m-0 flex flex-col justify-center pt-[10vh] text-center">
+      <h1 class="text-center">Welcome to Tauri</h1>
 
-      <div class="row">
-        <a href="https://vite.dev" target="_blank">
-          <img src="/src/core/assets/vite.svg" class="logo vite" alt="Vite logo" />
+      <div class="flex justify-center">
+        <a
+          class="font-medium text-[#646cff] no-underline hover:text-[#535bf2] dark:hover:text-[#24c8db]"
+          href="https://vite.dev"
+          target="_blank"
+        >
+          <img
+            src="/src/core/assets/vite.svg"
+            class="logo vite h-24 p-6"
+            alt="Vite logo"
+          />
         </a>
-        <a href="https://tauri.app" target="_blank">
+        <a
+          class="font-medium text-[#646cff] no-underline hover:text-[#535bf2] dark:hover:text-[#24c8db]"
+          href="https://tauri.app"
+          target="_blank"
+        >
           <img
             src="/src/core/assets/tauri.svg"
-            class="logo tauri"
+            class="logo tauri h-24 p-6"
             alt="Tauri logo"
           />
         </a>
-        <a href="https://www.typescriptlang.org/docs" target="_blank">
+        <a
+          class="font-medium text-[#646cff] no-underline hover:text-[#535bf2] dark:hover:text-[#24c8db]"
+          href="https://www.typescriptlang.org/docs"
+          target="_blank"
+        >
           <img
             src="/src/core/assets/typescript.svg"
-            class="logo typescript"
+            class="logo typescript h-24 p-6"
             alt="typescript logo"
           />
         </a>
       </div>
       <p>Click on the Tauri logo to learn more about the framework</p>
 
-      <form class="row" id="greet-form">
-        <input id="greet-input" placeholder="Enter a name..." />
-        <button type="submit">Greet</button>
+      <form class="flex justify-center" id="greet-form">
+        <input
+          id="greet-input"
+          class="mr-[5px] rounded-lg border border-transparent bg-white px-5 py-[0.6em] text-base font-medium text-[#0f0f0f] shadow-[0_2px_2px_rgba(0,0,0,0.2)] outline-none transition-colors dark:bg-[#0f0f0f98] dark:text-white"
+          placeholder="Enter a name..."
+        />
+        <button
+          type="submit"
+          class="cursor-pointer rounded-lg border border-transparent bg-white px-5 py-[0.6em] text-base font-medium text-[#0f0f0f] shadow-[0_2px_2px_rgba(0,0,0,0.2)] outline-none transition-colors hover:border-[#396cd8] active:border-[#396cd8] active:bg-[#e8e8e8] dark:bg-[#0f0f0f98] dark:text-white dark:active:bg-[#0f0f0f69]"
+        >
+          Greet
+        </button>
       </form>
       <p id="greet-msg"></p>
     </main>
