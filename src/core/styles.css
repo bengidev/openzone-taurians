@@ -1,13 +1,5 @@
 @import "tailwindcss";
 
-/* Font-rendering globals lost to Preflight (parity with pre-Tailwind CSS) */
-:root {
-  line-height: 1.5;
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-text-size-adjust: 100%;
-}
-
 /* Logo brand-colored hover glows (not expressible as utilities).
    Mirror the original vanilla CSS exactly: a 0.75s ease transition on
    `all` (not just filter) plus will-change to pre-promote the layer so
