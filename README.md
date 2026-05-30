@@ -59,14 +59,6 @@ openzone-taurians/
 > `vite.config.ts` serve `src/core/index.html` at `/` in dev and flatten
 > it to `dist/index.html` on build so Tauri's `frontendDist` resolves it.
 
-## 🗺️ Roadmap
-
-- [ ] Core AI chat interface
-- [ ] Multiple model provider support (local & remote)
-- [ ] Desktop task automation
-- [ ] Plugin system
-- [ ] Cross-platform builds (Windows, macOS, Linux)
-
 ## 🤝 Contributing
 
 Contributions are welcome! Please open an issue to discuss what you'd like to change. See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
