@@ -9,12 +9,12 @@
 }
 
 /* Logo brand-colored hover glows (not expressible as utilities).
-   Transition scoped to `filter` only (not `all`) so hover does not
-   trigger layout/paint churn; transform: translateZ(0) promotes the
-   element to its own GPU layer for smooth drop-shadow animation. */
+   Mirror the original vanilla CSS exactly: a 0.75s ease transition on
+   `all` (not just filter) plus will-change to pre-promote the layer so
+   the drop-shadow ramps smoothly instead of snapping on first hover. */
 .logo {
-  transition: filter 0.75s ease;
-  transform: translateZ(0);
+  will-change: filter;
+  transition: 0.75s;
 }
 
 .logo.tauri:hover {
