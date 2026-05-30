@@ -12,8 +12,10 @@
     class="min-h-screen bg-[#f6f6f6] text-[#0f0f0f] antialiased dark:bg-[#2f2f2f] dark:text-[#f6f6f6]"
     style="font-family: Inter, Avenir, Helvetica, Arial, sans-serif"
   >
-    <main class="m-0 flex flex-col justify-center pt-[10vh] text-center">
-      <h1 class="text-center">Welcome to Tauri</h1>
+    <main
+      class="m-0 flex flex-col items-center justify-center gap-4 pt-[10vh] text-center"
+    >
+      <h1 class="text-5xl font-bold leading-tight">Welcome to Tauri</h1>
 
       <div class="flex justify-center">
         <a
@@ -50,9 +52,11 @@
           />
         </a>
       </div>
-      <p>Click on the Tauri logo to learn more about the framework</p>
+      <p class="text-base">
+        Click on the Tauri logo to learn more about the framework
+      </p>
 
-      <form class="flex justify-center" id="greet-form">
+      <form class="flex justify-center gap-0" id="greet-form">
         <input
           id="greet-input"
           class="mr-[5px] rounded-lg border border-transparent bg-white px-5 py-[0.6em] text-base font-medium text-[#0f0f0f] shadow-[0_2px_2px_rgba(0,0,0,0.2)] outline-none transition-colors dark:bg-[#0f0f0f98] dark:text-white"
