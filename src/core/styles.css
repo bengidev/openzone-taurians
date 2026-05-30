@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+/* Font-rendering globals lost to Preflight (parity with pre-Tailwind CSS) */
+:root {
+  line-height: 1.5;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%;
+}
+
 /* Logo brand-colored hover glows (not expressible as utilities).
    Transition scoped to `filter` only (not `all`) so hover does not
    trigger layout/paint churn; transform: translateZ(0) promotes the
@@ -8,12 +16,15 @@
   transition: filter 0.75s ease;
   transform: translateZ(0);
 }
+
 .logo.tauri:hover {
   filter: drop-shadow(0 0 2em #24c8db);
 }
+
 .logo.vite:hover {
   filter: drop-shadow(0 0 2em #747bff);
 }
+
 .logo.typescript:hover {
   filter: drop-shadow(0 0 2em #2d79c7);
 }
