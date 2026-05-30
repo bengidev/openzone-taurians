@@ -1,9 +1,12 @@
 @import "tailwindcss";
 
-/* Logo brand-colored hover glows (not expressible as utilities) */
+/* Logo brand-colored hover glows (not expressible as utilities).
+   Transition scoped to `filter` only (not `all`) so hover does not
+   trigger layout/paint churn; transform: translateZ(0) promotes the
+   element to its own GPU layer for smooth drop-shadow animation. */
 .logo {
-  will-change: filter;
-  transition: filter 0.75s;
+  transition: filter 0.75s ease;
+  transform: translateZ(0);
 }
 .logo.tauri:hover {
   filter: drop-shadow(0 0 2em #24c8db);
