@@ -1,5 +1,11 @@
 # OpenZone Taurians
 
+![platform](https://img.shields.io/badge/platform-desktop-555555?style=flat&labelColor=2b2b2b)
+![Tauri](https://img.shields.io/badge/Tauri-2.0-24C8DB?style=flat&labelColor=2b2b2b&logo=tauri)
+![Rust](https://img.shields.io/badge/Rust-stable-CE422B?style=flat&labelColor=2b2b2b&logo=rust)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178C6?style=flat&labelColor=2b2b2b&logo=typescript)
+![License](https://img.shields.io/badge/License-MIT-EBCB8B?style=flat&labelColor=2b2b2b)
+
 > A cross-platform desktop AI assistant that brings AI models directly to your desktop to help you get work done.
 
 OpenZone Taurians integrates AI models with your desktop environment, letting you delegate tasks, automate workflows, and get intelligent assistance without leaving your machine. Built with [Tauri](https://tauri.app/) for a fast, secure, and lightweight native experience.
